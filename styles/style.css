@@ -1,0 +1,277 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+}
+
+.navbar {
+    color: gray;
+    background-color: #222;
+}
+
+.navbar a {
+    color: gray;
+}
+
+.navbar a:hover {
+    animation: linkHover 0.4s ease-in-out forwards;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+.navbar-brand {
+    padding-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-bitcoin {
+    margin-right: 0.4rem;
+    display: block;
+    scale: 1.2;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba( 0, 0, 0, 0.9), rgba( 0, 0, 0, 0.9)), url(/./assets/Aqua\ coin.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+main > div {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ /* =============================================================================================================== */
+ /* Home */
+ /* =============================================================================================================== */
+.para {
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 3px solid #fff;
+    margin-right: 3rem;
+    padding-right: 3rem;
+    text-align: center;
+    height: 25rem;
+    
+}
+
+p {
+    text-align: center;
+}
+.live-auction {
+    height: 100%;
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+.auct-info {
+    width: 40rem;
+    padding-left: 1rem;
+    gap: 0.9rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+
+}
+.ai1 {
+    justify-content: center;
+    margin-bottom: 4rem;
+    gap: 2rem;
+}
+.ai1 .fa-clock {
+    scale: 3;
+}
+.ai1 h4 {
+    font-size: xxx-large;
+
+}
+.live-auction i {
+    
+    display: block;
+    scale: 1.5;
+}
+.val {
+    margin-left: auto;
+}
+.live-auction button a{
+    text-decoration: none;
+    color: white;
+
+}
+.live-auction button{
+    background: none;
+    width: 10rem;
+    height: 2rem;
+    border: 2px solid #fff;
+    border-radius: 0.3rem;
+    color: #fff;
+    margin-top: 2rem;
+}
+.live-auction button:hover a {
+    animation: linkHover 0.4s ease-in-out forwards;
+}
+.live-auction button:hover{
+    animation: buttonHover 0.4s ease-in-out forwards;
+}
+
+/* =============================================================================================================== */
+/* Sign-in page */
+/* =============================================================================================================== */
+#login .instructions {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+    margin-left: 3rem;
+    border-left: 3px solid #fff;
+    height: 27rem;
+}
+.signin-form {
+    width: 25rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.signin-form .form-control {
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid white;
+    background: none;
+    width: 22rem;
+    color: #fff;
+}
+.signin-form .form-control:focus {
+    border-color: aqua;
+    color: #fff;
+}
+.signin-form button {
+    background: none;
+    width: 10rem;
+    height: 2rem;
+    border: 2px solid #fff;
+    border-radius: 0.3rem;
+    color: #fff;
+
+}
+
+.signin-form button:hover {
+    animation: buttonHover 0.4s ease-in-out forwards;
+}
+/* =============================================================================================================== */
+/* Sign-up page */
+/* =============================================================================================================== */
+.signup-form {
+    width: 25rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.signup-form .form-control {
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid white;
+    background: none;
+    width: 22rem;
+    color: #fff;
+}
+.signup-form .form-control:focus {
+    border-color: aqua;
+    color: #fff;
+}
+#signup .instructions{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 3rem;
+    margin-right: 3rem;
+    border-right: 3px solid #fff;
+    height: 27rem;
+}
+.signup-form button {
+    background: none;
+    width: 10rem;
+    height: 2rem;
+    border: 2px solid #fff;
+    border-radius: 0.3rem;
+    color: #fff;
+
+}
+.signup-form button:hover {
+    animation: buttonHover 0.4s ease-in-out forwards;
+}
+
+ /* =============================================================================================== */
+@keyframes linkHover {
+    0% {
+        scale: 1;
+        color: gray;
+    }
+    50%{
+        scale: 1.1;
+        color:aqua;
+    }
+    100%{
+        scale: 1.03;
+        color:aqua;
+    }
+}
+
+@keyframes buttonHover {
+    0% {
+        scale: 1;
+        border-color: #fff;
+        color: #fff;
+    }
+    50%{
+        scale: 1.1;
+        color:aqua;
+        border-color: aqua;
+    }
+    100%{
+        scale: 1.03;
+        color:aqua;
+        border-color: aqua;
+    }
+}
